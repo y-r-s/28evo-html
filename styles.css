@@ -1,0 +1,58 @@
+html{
+box-sizing: border-box;
+}
+
+*,*:before,*:after {
+box-sizing:inherit;
+}
+
+h0,h1,h2,p {
+margin:0;
+}
+
+body{
+width:700px;
+height:500px;
+box-shadow:2px 3px 7px 0px rgba(0,0,0,0.35);
+border-radius:5px;
+overflow: hidden;
+}
+
+.second{
+display:flex;
+height:60%;
+}
+
+h0{
+
+color:#2bb3b1;
+}
+
+h1{
+}
+
+p{
+color:#b7b7b7;
+}
+
+.box_1{
+background-color: white;
+padding:30px;
+}
+
+.box_2{
+background-color: #2bb3b1;
+flex:50%;
+padding:30px;
+}
+
+.box_3{
+background-color:#4abebd;
+flex:50%;
+padding:30px;
+
+}
+
+button{
+background-color:#bfe031;
+}

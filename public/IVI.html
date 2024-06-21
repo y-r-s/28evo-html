@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>IVI</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./IVI.js"></script> 
+</head>
+<body>
+    <div class="IVI-container">
+        <video id="backgroundVideo" muted loop plays-inline class="video">
+            <source src="/videos/susanne_100f.mp4" type="video/mp4">
+        </video>
+
+        <div class = "content">
+            <h1>Good morning, Youran!</h1>
+            <button id="turnLeftBtn"><</button>
+            <h4>Current viewport width: <span>500</span> px.</h4>
+        </div>
+    </div>
+</body>
+</html>

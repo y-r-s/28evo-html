@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Open Multiple Windows</title>
+    <script src="/socket.io/socket.io.js"></script>
     <script>
 
         function openIVI(){
@@ -33,11 +34,11 @@
 </head>
 <body>
     <div id="menu">
-    <button onclick="openIVI()">Open IVI</button>
-    <button onclick="openMETER()">Open METER</button>
-    <button onclick="openSWL()">Open STEERING WHEEL LEFT</button>
-    <button onclick="openSWR()">Open STEERING WHEEL RIGHT</button>
-    <button onclick="openAll()">Open ALL</button>
+    <button onclick="openIVI()">IVI</button>
+    <button onclick="openMETER()">METER</button>
+    <button onclick="openSWL()">STEERING WHEEL LEFT</button>
+    <button onclick="openSWR()">STEERING WHEEL RIGHT</button>
+    <button onclick="openAll()">ALL</button>
     </div>
 </body>
 </html>

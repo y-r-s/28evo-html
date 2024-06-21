@@ -10,14 +10,23 @@ const io= new Server(server);
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+//Serve static files such as css
+app.use(express.static(join(__dirname, 'public')));
+
 app.get('/',(req, res) =>{
-    res.sendFile(join(__dirname, 'client.html'));
+    res.sendFile(join(__dirname, 'index.html'));
 });
 
 io.on('connection',(socket) =>{
     console.log('a user connected');
-    socket.on('chat message',(msg) =>{
-        io.emit('chat message', msg);
+
+
+    socket.on('video control',(action) =>{
+        io.emit('video control', action);
+    });
+
+    socket.on('disconnect', () => {
+        console.log('user disconnected');
     });
 });
 

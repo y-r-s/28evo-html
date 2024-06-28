@@ -46,6 +46,7 @@ body{
     padding: 15px 25px;
     border-radius: 35px;
     transition:0.1s;
+    cursor:pointer;
 }
 
 #turnLeftBtn:hover{
